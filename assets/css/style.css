@@ -18,6 +18,10 @@ body {
 
 /* General */
 
+.d-none {
+  display: none;
+}
+
 section,
 .section-bg {
   padding: 64px 0;
@@ -458,4 +462,116 @@ main {
   #history .row {
     flex-direction: column;
   }
+}
+
+/* Register */
+
+#register .card {
+  padding: 72px;
+}
+
+#register .row {
+  display: flex;
+  column-gap: 64px;
+}
+
+#register .row .col-left {
+  flex: 1;
+}
+
+#register .row .col-left .form {
+  margin-bottom: 32px;
+}
+
+#register .row .col-right .image-selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 32px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.32);
+}
+
+#register .row .col-right .image-selection img {
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+/* Input Container */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form .input-container {
+  position: relative;
+}
+
+.form .input-container input,
+.form .input-container select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 8px 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #dddddd;
+  background-color: transparent;
+  outline: none;
+}
+
+.form .input-container label {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  color: #000000;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.form .input-container input:focus ~ label,
+.form .input-container input:valid ~ label,
+.form .input-container select:valid ~ label {
+  top: -20px;
+  font-size: 16px;
+  color: #777777;
+}
+
+.form .input-container .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.form .input-container input:focus ~ .underline {
+  transform: scaleX(1);
+}
+
+/* Button */
+
+.btn {
+  padding: 24px 64px;
+  border: none;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #222222;
 }
