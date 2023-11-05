@@ -1,6 +1,6 @@
 const scrollableX = document.querySelector(".scrollable-x");
 
-scrollableX?.addEventListener("wheel", (evt) => {
-  evt.preventDefault();
-  scrollableX.scrollLeft += evt.deltaY;
+scrollableX?.addEventListener("wheel", (event) => {
+  event.preventDefault();
+  scrollableX.scrollLeft += event.deltaY;
 });

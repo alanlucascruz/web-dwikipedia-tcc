@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: "Karla", sans-serif;
   overflow-x: hidden;
+  background-color: #222222;
 }
 
 :root {
@@ -19,7 +20,7 @@ body {
 /* General */
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 section,
@@ -402,7 +403,7 @@ main {
 }
 
 #topics .card a:hover {
-  color: #15527a;
+  color: #2997d4;
 }
 
 @media (max-width: 1024px) {
@@ -483,6 +484,10 @@ main {
   margin-bottom: 32px;
 }
 
+#register .row .col-left .btn {
+  margin-right: 16px;
+}
+
 #register .row .col-right .image-selection {
   display: flex;
   align-items: center;
@@ -496,7 +501,7 @@ main {
 #register .row .col-right .image-selection img {
   height: 300px;
   width: 400px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 24px;
   cursor: pointer;
 }
@@ -557,9 +562,16 @@ main {
   transform: scaleX(1);
 }
 
+.form .invalid-form-text {
+  color: #f11818;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 /* Button */
 
 .btn {
+  font-size: 16px;
   padding: 24px 64px;
   border: none;
   border-radius: 24px;
@@ -574,4 +586,48 @@ main {
 
 .btn-primary:hover {
   background-color: #222222;
+}
+
+.btn-secondary {
+  background-color: #c4c4c4;
+  color: #000000;
+}
+
+.btn-secondary:hover {
+  background-color: #afafaf;
+}
+
+/* Loader */
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.72);
+  z-index: 9999;
+}
+
+.loader {
+  width: 64px;
+  height: 64px;
+  border: 4px solid #ffffff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
