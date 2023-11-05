@@ -48,40 +48,53 @@
     </nav>
 
     <main>
-      <section id="history">
+      <section id="article">
         <div class="container">
           <div class="row">
             <div class="col-left">
               <div class="card">
-                <h4>Neste dia pela história</h4>
-                <img src="../assets/img/alpacas.jpg" alt="Example Image" />
+                <h4>
+                  Curiosidades
+                  <span class="edit-item d-none">[Editar]</span>
+                </h4>
+                <img
+                  src="../assets/img/empty-image-2.png"
+                  alt="Example Image"
+                />
+                <span class="edit-item d-none">[Alterar imagem]</span>
               </div>
             </div>
 
             <div class="col-right">
               <div class="card">
-                <h4>Você sabia?</h4>
+                <h4>
+                  Você sabia?
+                  <span class="edit-item d-none">[Editar]</span>
+                </h4>
                 <p>
-                  Vicugna pacos, conhecido pelo nome comum de alpaca, é um
-                  mamífero sul-americano estreitamente aparentado com a vicunha
-                  e, um pouco mais distante, com o guanaco e a lhama. A alpaca é
-                  um animal da família dos camelídeos. É menor que a lhama,
-                  tendo uma pelagem mais longa e macia. É criada no Peru, Chile
-                  e na Bolívia (região dos Andes) como fonte financeira
-                  principal, para o aproveitamento da sua lã (fibra de alpaca).
-                  O hábito de cuspir também é comum na alpaca, que o utiliza
-                  para mostrar agressividade ou como método de defesa, mas ela é
-                  muito dócil.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  libero leo, sollicitudin a egestas nec, pretium aliquet erat.
+                  Sed et lacus ut arcu tempus maximus. Aenean interdum commodo
+                  sapien. Vestibulum bibendum aliquet diam, a condimentum ante
+                  consequat in. Vivamus vitae condimentum nunc, efficitur
+                  imperdiet mauris. Curabitur tincidunt lacus in pretium varius.
+                  In euismod leo ante. Maecenas viverra nisi vel velit
+                  consectetur tincidunt. Phasellus egestas enim magna, in tempus
+                  justo posuere eget. Vestibulum a accumsan mauris. Phasellus
+                  tincidunt pellentesque neque quis faucibus. Vivamus id maximus
+                  dui, consequat placerat neque.
                 </p>
 
                 <p>
-                  Alpacas, animais ruminantes da família dos camelídeos (da qual
-                  também são as lhamas e as vicunhas), são nativos da
-                  Cordilheira dos Andes. Existem também espécimes nos Estados
-                  Unidos, Canadá, Nova Zelândia e Austrália. A maior população
-                  de alpacas encontra-se hoje no Peru, com aproximadamente 3
-                  milhões de cabeças, mais que 87% de sua população mundial.
+                  Vivamus condimentum luctus justo, malesuada pulvinar mauris
+                  dictum quis. Donec vel elit quis enim ornare pulvinar a at
+                  augue. Donec suscipit leo arcu, ut maximus magna auctor vel.
+                  Nunc maximus lectus iaculis orci posuere, ut vestibulum ex
+                  commodo. Vivamus eget pharetra nisi. Praesent et elementum
+                  leo.
                 </p>
+
+                <span class="edit-item d-none">[Editar]</span>
               </div>
             </div>
           </div>
@@ -91,7 +104,10 @@
       <div class="bg-gradient">
         <section id="about-us">
           <div class="container">
-            <div class="title">História</div>
+            <div class="title">
+              <span id="article-title">História</span>
+              <span class="edit-item d-none">[Editar]</span>
+            </div>
 
             <div class="row">
               <div class="col-left">
@@ -123,6 +139,8 @@
                   centralizar reflexões e avaliações sobre como melhorar o
                   conteúdo da Wikipédia.
                 </p>
+
+                <span class="edit-item d-none">[Editar]</span>
               </div>
 
               <div class="col-right">
@@ -140,18 +158,20 @@
             <div class="title">Comece a sua pesquisa</div>
 
             <div class="card">
-              <a href="../historia/view.html">História</a>
-              <a href="../historia/view.html">Ciência</a>
-              <a href="../historia/view.html">Esportes</a>
-              <a href="../historia/view.html">Matemática</a>
-              <a href="../historia/view.html">Tecnologia</a>
-              <a href="../historia/view.html">Arte</a>
-              <a href="../historia/view.html">Sociedade</a>
-              <a href="../historia/view.html">Filosofia</a>
-              <a href="../historia/view.html">Biografias</a>
-              <a href="../historia/view.html">Biologia</a>
-              <a href="../historia/view.html">Notícias</a>
-              <a href="../historia/view.html">Universidade</a>
+              <a href="../artigo/view.html?categoria=História">História</a>
+              <a href="../artigo/view.html?categoria=Ciência">Ciência</a>
+              <a href="../artigo/view.html?categoria=Esportes">Esportes</a>
+              <a href="../artigo/view.html?categoria=Matemática">Matemática</a>
+              <a href="../artigo/view.html?categoria=Tecnologia">Tecnologia</a>
+              <a href="../artigo/view.html?categoria=Arte">Arte</a>
+              <a href="../artigo/view.html?categoria=Sociedade">Sociedade</a>
+              <a href="../artigo/view.html?categoria=Filosofia">Filosofia</a>
+              <a href="../artigo/view.html?categoria=Biografias">Biografias</a>
+              <a href="../artigo/view.html?categoria=Biologia">Biologia</a>
+              <a href="../artigo/view.html?categoria=Notícias">Notícias</a>
+              <a href="../artigo/view.html?categoria=Universidade">
+                Universidade
+              </a>
             </div>
           </div>
         </section>
@@ -160,5 +180,6 @@
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
+    <script src="controller.js"></script>
   </body>
 </html>

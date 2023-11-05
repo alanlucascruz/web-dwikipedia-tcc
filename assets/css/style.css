@@ -8,7 +8,6 @@ body {
   margin: 0;
   font-family: "Karla", sans-serif;
   overflow-x: hidden;
-  background-color: #222222;
 }
 
 :root {
@@ -84,6 +83,13 @@ p {
   }
 }
 
+.edit-item {
+  color: #2997d4;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 /* Navbar */
 
 #nav {
@@ -150,6 +156,18 @@ p {
   display: flex;
   align-items: center;
   gap: 32px;
+}
+
+#nav .col-right a.edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -16px;
+}
+
+#nav .col-right a.edit img {
+  width: 56px;
+  height: 56px;
 }
 
 #nav .col-right a.user {
@@ -222,6 +240,15 @@ p {
 
   #nav .col-left .input-container img.icon {
     display: none;
+  }
+
+  #nav .col-right a.edit {
+    margin-right: -12px;
+  }
+
+  #nav .col-right a.edit img {
+    height: 48px;
+    width: 48px;
   }
 
   #nav .col-right a.user {
@@ -423,44 +450,44 @@ main {
   }
 }
 
-/* History */
+/* Article */
 
-#history {
+#article {
   padding: 104px 0;
 }
 
-#history .row {
+#article .row {
   display: flex;
   gap: 32px;
 }
 
-#history .row .col-left {
+#article .row .col-left {
   display: flex;
   flex: 1;
 }
 
-#history .row .col-right {
+#article .row .col-right {
   display: flex;
   flex: 1;
 }
 
-#history .card h4 {
+#article .card h4 {
   font-size: 24px;
   margin: 0 0 16px 0;
 }
 
-#history .card p {
+#article .card p {
   font-size: 16px;
 }
 
-#history .card img {
+#article .card img {
   width: 100%;
   height: auto;
   border-radius: 16px;
 }
 
 @media (max-width: 1024px) {
-  #history .row {
+  #article .row {
     flex-direction: column;
   }
 }
@@ -504,6 +531,48 @@ main {
   object-fit: contain;
   border-radius: 24px;
   cursor: pointer;
+}
+
+@media (max-width: 1366px) {
+  #register .card {
+    padding: 48px;
+  }
+
+  #register .row {
+    column-gap: 48px;
+  }
+
+  #register .row .col-right .image-selection img {
+    height: 280px;
+    width: 330px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #register .row {
+    flex-direction: column-reverse;
+  }
+
+  #register .row .col-left .form {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  #register .card {
+    padding: 24px;
+  }
+
+  #register .row .col-left .btn {
+    padding: 20px 32px;
+    margin-right: 8px;
+  }
+
+  #register .row .col-right .image-selection img {
+    height: auto;
+    max-height: 320px;
+    width: 100%;
+  }
 }
 
 /* Input Container */
