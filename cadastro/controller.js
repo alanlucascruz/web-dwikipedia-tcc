@@ -46,9 +46,11 @@ const onChangeInputFile = async (event) => {
     await validarCertificado(files);
 
     hideLoader();
+    hideInvalidFormText();
   } catch (error) {
     console.log("Ocorreu um erro inesperado: ", error);
     hideLoader();
+    hideInvalidFormText();
   }
 };
 
@@ -77,6 +79,11 @@ const validarCertificado = async (files) => {
 const showInvalidFormText = (text) => {
   invalidFormTextEl.classList.remove("d-none");
   invalidFormTextEl.textContent = text;
+};
+
+const hideInvalidFormText = () => {
+  invalidFormTextEl.classList.add("d-none");
+  invalidFormTextEl.textContent = "";
 };
 
 const onClickConfirmar = async () => {
