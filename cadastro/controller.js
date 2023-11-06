@@ -1,4 +1,5 @@
-const API = "https://www.nyckel.com/v0.9/functions/kbkxm8nbibnu2437/locate",
+const // API = "https://www.nyckel.com/v0.9/functions/kbkxm8nbibnu2437/locate",
+  API = "https://www.nyckel.com/v0.9/functions/gqxoww65gw1kkfh4/locate",
   LOCAL_STORAGE_KEY = "usuario",
   imagePreviewEl = document.querySelector("#image-preview"),
   inputFileEl = document.querySelector("#input-file"),
